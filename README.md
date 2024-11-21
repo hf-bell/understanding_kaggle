@@ -11,5 +11,9 @@ Competition: https://www.kaggle.com/competitions/llm-20-questions/overview
 
 ## 1st place methods 
 
-
+### Questions
+- Keyword selection 
+- Minimise expected entropy of questions
+  
+### Answers 
 
