@@ -22,7 +22,7 @@ Models built in PyTorch
 -  GemmaCausalLM() (https://keras.io/api/keras_nlp/models/gemma/gemma_causal_lm/) -- we are going to use the _generate()_ functionality to make the LM generate from a question / answer prompt 
 
 #### GemmaFormatter()
-- Defines how turns are formatted 
+- Framework for dialogue between the 'questioner' and the 'answerer', drawing on [this](https://ai.google.dev/gemma/docs/formatting) 
 - 'user' and 'model' - what are these? 
 - 
 #### GemmaAgent()
