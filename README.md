@@ -15,11 +15,10 @@ Models built in PyTorch
 ### Agent formulation 
 
 #### Based on Google Gemma LLMs (from Gemini family)
-- https://arxiv.org/pdf/2312.11805
-- Multimodal decoder-only transformers
--  Use sparse mixture-of-experts on feedforward layers of decoder to improve inference speed (https://arxiv.org/pdf/2312.17238)
--  Uses Instruction-Tuned model (https://ai.google.dev/gemma/docs), as we are only looking at conversation
--  GemmaCausalLM() (https://keras.io/api/keras_nlp/models/gemma/gemma_causal_lm/) -- we are going to use the _generate()_ functionality to make the LM generate from a question / answer prompt 
+- [Multimodal decoder-only transformers](https://arxiv.org/pdf/2312.11805)
+-  Use [sparse mixture-of-experts](https://arxiv.org/pdf/2312.17238) on feedforward layers of decoder to improve inference speed
+-  Uses [Instruction-Tuned model](https://ai.google.dev/gemma/docs), as we are only looking at conversation
+-  [GemmaCausalLM()](https://keras.io/api/keras_nlp/models/gemma/gemma_causal_lm/) -- we are going to use the _generate()_ functionality to make the LM generate from a question / answer prompt 
 
 #### GemmaFormatter()
 - Framework for dialogue between the 'questioner' and the 'answerer', drawing on [this](https://ai.google.dev/gemma/docs/formatting) 
