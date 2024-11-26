@@ -25,7 +25,7 @@ Models built in PyTorch
 - Sets up format of multi-turn based interactions between a 'user' and a 'model' as accepted by the Gemma LLM. Ensures all inputs to LLM are formatted correctly for processing, and also sets up iterative cycle through turns in dialogue.  
 - 
 #### GemmaAgent()
-- d
+- GemmaFormatter is a parameter of each Agent 
 - 
 #### GemmaQuestionerAgent(GemmaAgent)
 #### GemmaAnswererAgent(GemmaAgent)
