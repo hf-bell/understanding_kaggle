@@ -23,10 +23,15 @@ Models built in PyTorch
 #### GemmaFormatter()
 - Framework for dialogue between the 'questioner' and the 'answerer', drawing on [this](https://ai.google.dev/gemma/docs/formatting) 
 - Sets up format of multi-turn based interactions between a 'user' and a 'model' as accepted by the Gemma LLM. Ensures all inputs to LLM are formatted correctly for processing, and also sets up iterative cycle through turns in dialogue.  
-- 
+- Formatter has a state -- which is a continuous string containing the history of dialogue turns, formatted correct for Gemma
 #### GemmaAgent()
 - GemmaFormatter is a parameter of each Agent 
-- 
+- Setup Gemma agent call & download parameters
+- Methods:
+-   _GemmaAgent()_ -- call() implementation: Input state of formatter (history of dialogue) into LLM and generate response
+-   _parse_response_; start_session() -- empty methods for inheritance
+-   _call_llm_ -- calls generate() method of GemmaCausalLLM object, using [temperature](https://www.iguazio.com/glossary/llm-temperature/), top_p (threshold cumulative probability for a set of tokens to be generated from LLM); (threshold token probability at each timestep) keywords + a limit on number of tokens to be generated. Generates the LLM output for this turn. 
+-   _parse_keyword_ -- Strips formatting from answerer guess & returns 'guess keyword'
 #### GemmaQuestionerAgent(GemmaAgent)
 #### GemmaAnswererAgent(GemmaAgent)
 
