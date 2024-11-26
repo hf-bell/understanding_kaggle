@@ -6,7 +6,7 @@ A repo for me to document methods used to achieve the highest scores on Kaggle c
 Competition: https://www.kaggle.com/competitions/llm-20-questions/overview
 
 1st place entry explanation: https://www.kaggle.com/competitions/llm-20-questions/discussion/531106
-Code: https://www.kaggle.com/datasets/cnumber/llm-20-questions-final-submissions
+<br/> Code: https://www.kaggle.com/datasets/cnumber/llm-20-questions-final-submissions
 
 ## Baseline approach 
 See _https://www.kaggle.com/code/ryanholbrook/llm-20-questions-starter-notebook_
