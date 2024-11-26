@@ -22,9 +22,11 @@ Models built in PyTorch
 
 #### GemmaFormatter()
 - Framework for dialogue between the 'questioner' and the 'answerer', drawing on [this](https://ai.google.dev/gemma/docs/formatting) 
-- 'user' and 'model' - what are these? 
+- Sets up format of multi-turn based interactions between a 'user' and a 'model' as accepted by the Gemma LLM. Ensures all inputs to LLM are formatted correctly for processing, and also sets up iterative cycle through turns in dialogue.  
 - 
 #### GemmaAgent()
+- d
+- 
 #### GemmaQuestionerAgent(GemmaAgent)
 #### GemmaAnswererAgent(GemmaAgent)
 
