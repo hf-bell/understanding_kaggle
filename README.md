@@ -32,7 +32,10 @@ Models built in PyTorch
 -   _parse_response_; start_session() -- empty methods for inheritance
 -   _call_llm_ -- calls generate() method of GemmaCausalLLM object, using [temperature](https://www.iguazio.com/glossary/llm-temperature/), top_p (threshold cumulative probability for a set of tokens to be generated from LLM); (threshold token probability at each timestep) keywords + a limit on number of tokens to be generated. Generates the LLM output for this turn. 
 -   _parse_keyword_ -- Strips formatting from answerer guess & returns 'guess keyword'
+  
 #### GemmaQuestionerAgent(GemmaAgent)
+- d
+- 
 #### GemmaAnswererAgent(GemmaAgent)
 
 ## 1st place methods 
